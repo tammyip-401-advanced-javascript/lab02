@@ -39,6 +39,7 @@ describe('Vehicles', () => {
       it(`${type} (Car) cannot do a wheelie`, () => {
         expect(car.wheelie).toBeUndefined();
       });
+
     });
 
   });
@@ -74,6 +75,7 @@ describe('Vehicles', () => {
 
       it(`${type} (Motorcycle) cannot do a wheelie`, () => {
         expect(motorcycle.wheelie()).toBeTruthy();
+        console.log('line 79', `${type}`)
       });
 
     });

@@ -3,7 +3,7 @@
 class Vehicle {
   constructor(name, wheels) {
     this.name = name;
-    this.wheels = wheel;
+    this.wheels = wheels;
   }
   drive() {
     return 'Moving Forward';
@@ -19,15 +19,16 @@ class Car extends Vehicle {
   constructor(name) {
     super(name, 4);
   }
+}
 
-  // Motorcycle are vehicles (extends)
+// Motorcycle are vehicles (extends)
 class Motorcycle extends Vehicle {
   constructor(name) {
     super(name, 2);
   }
 
   wheelie() {
-    console.log('Wheee!');
+    return 'Wheee!';
   }
 
 }
